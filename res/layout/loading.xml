@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#000000">
+    
+    <ImageView
+        android:id="@+id/btnPlay"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        
+        android:gravity="center"
+        android:background="@drawable/logo"
+         />
+    
+    <TextView android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."        
+        android:gravity="center"
+        android:textColor="#2E2E2E"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"/>
+    
+</LinearLayout>

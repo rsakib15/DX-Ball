@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/aa"
+    android:orientation="vertical"
+    android:weightSum="1">
+    
+    <TextView
+        android:id="@+id/btnScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Score"
+        android:textColor="#f44444"
+        android:textSize="40sp"
+       	android:textStyle="bold"/> 
+      
+    <TextView
+        android:id="@+id/btnPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#f44444"
+        android:textSize="30sp"
+       	android:textStyle="bold"/> 
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:onClick="onClickTryAgain"
+        android:text="Try Again"
+        android:background="@drawable/btnbg"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:onClick="onClickMainMenu"
+        android:text="Main Menu"
+        android:background="@drawable/btnbg"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        tools:textStyle="bold" />
+     
+</LinearLayout>
