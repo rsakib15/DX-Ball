@@ -1,8 +1,10 @@
 package pack.game.dxball;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -41,7 +43,15 @@ public class MainActivity extends Activity {
     }
 
     public void onClickAbout(View view) {
-        
+    	Log.d("Click-Log","Click on About Button");
+        Intent i = new Intent(MainActivity.this,About.class);
+        startActivity(i);
+    }
+    
+    public void onClickHighScore(View view) {
+    	Log.d("Click-Log","Click on High Score Button");
+        Intent i = new Intent(MainActivity.this,HighScore.class);
+        startActivity(i);
     }
 
     public void onClickExit(View view) {

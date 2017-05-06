@@ -82,7 +82,6 @@ public class Ball {
     public void nextPos(Canvas canvas, Bar bar, Paint paint) {
     	if(x < radius || x > (canvas.getWidth() - radius)){
     		dx = -dx;
-    		
     	}
     	
     	if(y < radius|| y > (canvas.getHeight() - radius)){

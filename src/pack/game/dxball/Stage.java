@@ -20,7 +20,7 @@ public class Stage {
     	brickY= canvas.getHeight()/6;
     	float bricWidth = (((canvas.getWidth())-80) / perRowNumberOfBrick);
     	int cnt=0;
-        for (int i = 0; i <= 4; i++) {
+        for (int i = 0; i <= 3; i++) {
             for (int j = 0; j < perRowNumberOfBrick; j++) {
             	if(cnt%2==0)
             		col = Color.BLACK;
@@ -43,9 +43,49 @@ public class Stage {
         for (int i = 0; i <= 4; i++) {
             for (int j = 0; j < perRowNumberOfBrick; j++) {
             	if(cnt%2==0)
-            		col = Color.BLACK;
+            		col = Color.DKGRAY;
+            	else
+            		col = Color.GREEN;
+            	bricks.add(new Brick(brickX, brickY, brickX + bricWidth, brickY + brickHeight, col));
+            	brickX += bricWidth;
+             	cnt++;
+            }
+            brickY += brickHeight;
+            brickX = 40;
+        }
+    }
+    
+    public void levelThree(Canvas canvas,ArrayList<Brick> bricks){
+    	brickX= 40;
+    	brickY= canvas.getHeight()/6;
+    	float bricWidth = (((canvas.getWidth())-80) / perRowNumberOfBrick);
+    	int cnt=0;
+        for (int i = 0; i <= 5; i++) {
+            for (int j = 0; j < perRowNumberOfBrick; j++) {
+            	if(cnt%2==0)
+            		col = Color.rgb(10, 20, 30);
             	else
             		col = Color.CYAN;
+            	bricks.add(new Brick(brickX, brickY, brickX + bricWidth, brickY + brickHeight, col));
+            	brickX += bricWidth;
+             	cnt++;
+            }
+            brickY += brickHeight;
+            brickX = 40;
+        }
+    }
+    
+    public void levelFour(Canvas canvas,ArrayList<Brick> bricks){
+    	brickX= 40;
+    	brickY= canvas.getHeight()/6;
+    	float bricWidth = (((canvas.getWidth())-80) / perRowNumberOfBrick);
+    	int cnt=0;
+        for (int i = 0; i <= 5; i++) {
+            for (int j = 0; j < perRowNumberOfBrick; j++) {
+            	if(cnt%2==0)
+            		col = Color.RED;
+            	else
+            		col = Color.BLUE;
             	bricks.add(new Brick(brickX, brickY, brickX + bricWidth, brickY + brickHeight, col));
             	brickX += bricWidth;
              	cnt++;

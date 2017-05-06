@@ -26,7 +26,15 @@
             android:label="@string/app_name" >
         </activity>
         <activity
+            android:name=".About"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
             android:name=".Score"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".HighScore"
             android:label="@string/app_name" >
         </activity>
     </application>
